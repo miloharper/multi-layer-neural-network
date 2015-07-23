@@ -35,8 +35,8 @@ class NeuralNetwork():
             layer2_error = training_set_outputs - output_from_layer_2
             layer2_delta = layer2_error * self.__sigmoid_derivative(output_from_layer_2)
 
-            # Calculate the error for layer 1 (By looking at the weights in layer1, we can
-            # determine by how much layer1 contributed to the error in layer2?)
+            # Calculate the error for layer 1 (By looking at the weights in layer 1,
+            # we can determine by how much layer 1 contributed to the error in layer 2?)
             layer1_error = layer2_delta.dot(self.layer2.synaptic_weights.T)
             layer1_delta = layer1_error * self.__sigmoid_derivative(output_from_layer_1)
 
