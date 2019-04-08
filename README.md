@@ -23,5 +23,9 @@ The challenge is to train a neural network to detect the pattern using this trai
 | 0       | 0       | 0       | 0      |
 
 # Usage
-`pip install numpy`
-`python3 main.py`
+```
+pip install numpy
+```
+```
+python3 main.py
+```
